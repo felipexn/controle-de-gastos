@@ -16,11 +16,13 @@ int main (){
 	scanf("%i",&maxg);
 	if(maxg > max_gastos)
 	printf("numero de gastos invalido");
+	fflush(stdin);
 	
 	printf("digite o numero de meses'maximo 12': ");
 	scanf("%i",&maxm);
 	if(maxm> max_meses)
 	printf("numero de meses invalido");
+	fflush(stdin);
 	
 	char meses[][4] = {"JAN", "FEV","MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"};
 	char* nomegastos[maxg][30];
@@ -30,9 +32,10 @@ int main (){
 	for(i = 0; i < maxg; i++){
 		printf("digite o nome do gasto %d\n",i+1);
 	    scanf("%s",nomegastos[i]);}
+	fflush(stdin);
 	
-	   int b = 0;
-	   int a = 0;
+	   int b = 100;
+	   int a = 100;
 	float valor[a][b];
 	
 	for(i = 0; i < maxg; i++){
