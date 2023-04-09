@@ -11,9 +11,9 @@ int main (){
 	int maxg;
 	int maxm;
 	
-	
 	printf("digite o numero de gastos'maximo 6': ");
 	scanf("%i",&maxg);
+	
 	if(maxg > max_gastos)
 	printf("numero de gastos invalido");
 	fflush(stdin);
@@ -28,15 +28,12 @@ int main (){
 	char* nomegastos[maxg][30];
 	int i, j;
 	
-	
 	for(i = 0; i < maxg; i++){
 		printf("digite o nome do gasto %d\n",i+1);
 	    scanf("%s",nomegastos[i]);}
 	fflush(stdin);
 	
-	   int b = 100;
-	   int a = 100;
-	float valor[a][b];
+	float valor[100][100];
 	
 	for(i = 0; i < maxg; i++){
 	   for(j = 0; j < maxm; j++){
